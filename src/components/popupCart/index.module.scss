@@ -1,0 +1,90 @@
+.popUpCart {
+  width: 325px;
+  height: auto;
+  position: absolute;
+  top: 35px;
+  right: 0;
+  padding: 10px;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  z-index: 8;
+  .popUpCartContent {
+    .popUpCartTitle {
+      font-weight: 400;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+    .popUpCartList {
+      padding-inline-start: 0px;
+      .productBrand {
+        font-weight: 300;
+        height: 25px;
+      }
+      .productPrice {
+        margin-top: 10px;
+      }
+      .cartListItem {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        &:last-child {
+          margin-bottom: 0px;
+        }
+        .buttonWrapper {
+          display: inherit;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          margin-right: 15px;
+
+          .productInc,
+          .productDec {
+            button {
+              cursor: pointer;
+              border: 1px solid #1d1f22;
+              background-color: #fff;
+              font-size: 20px;
+            }
+          }
+        }
+        .popUpCartCount {
+          display: flex;
+          .productImg {
+            img {
+              width: 121px;
+            }
+          }
+        }
+      }
+    }
+    .cartFooter {
+      .totalPriceWrapper {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 600;
+      }
+    }
+  }
+  .footerButtons {
+    display: flex;
+    justify-content: space-between;
+    .viewBag {
+      cursor: pointer;
+      width: 130px;
+      height: 40px;
+      margin-top: 30px;
+      background: #ffffff;
+      border: 1px solid #1d1f22;
+    }
+    .checkOut {
+      cursor: pointer;
+      border: none;
+      width: 130px;
+      height: 40px;
+      margin-top: 30px;
+      color: #fff;
+      background: #5ece7b;
+    }
+  }
+}

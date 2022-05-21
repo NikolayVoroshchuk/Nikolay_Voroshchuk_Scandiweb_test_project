@@ -1,0 +1,17 @@
+.colorContainer {
+  display: flex;
+  .colorBox {
+    cursor: pointer;
+    background-clip: content-box;
+    width: 20px;
+    height: 20px;
+    padding: 1px;
+    border: 1px solid white;
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+  .selected {
+    border: 1px solid lightgreen;
+  }
+}
