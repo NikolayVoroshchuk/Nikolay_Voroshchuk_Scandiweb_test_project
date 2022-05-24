@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import ShopLayout from '../../client/src/layouts/shop';
+import ShopLayout from '../src/layouts/shop';
 
 class App extends Component {
   render() {
